@@ -56,10 +56,24 @@ It will exclude the flaky test from the test suite automatically.
 To run tests in parallel you need to specify --parallel value. 
 If not specified will default to 3.
 
+
+### @wip tag - how to run tests while development
+
+Add @wip tag to the test/tests you are working on
+
+```sh
+npm run wip"
+```
+
 ### Default options
 
 You can skip --parallel and --tags. It will default to run all scenarios with @regression tag in 3 parallel instances.
+Chromes is the browser used by default.
 
 ## Reports
 
 Reports are done via the Cucumber reporter. The results are placed in the /src/reports directory.
+
+## Demo feature file
+
+For demo purposes I included test_elements.feature
