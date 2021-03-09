@@ -62,7 +62,7 @@ If not specified will default to 3.
 Add @wip tag to the test/tests you are working on
 
 ```sh
-npm run wip"
+npm run wip
 ```
 
 ### Default options
