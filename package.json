@@ -1,0 +1,49 @@
+{
+  "name": "testcafe-cucumber",
+  "version": "0.1.0",
+  "description": "An integration of TestCafe and CucumberJS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spotlight-reporting/regression-test-suite"
+  },
+  "scripts": {
+    "test": "del-cli Reports/* && gulp createReportsFolder && ts-node run",
+    "gulpscript": "gulp test",
+    "testscript": "npm-run-all --serial \"gulpscript -- {1} {2} {3}\" --",
+    "wip": "del-cli Reports/* && gulp createReportsFolder && gulp wip && gulp wipreport",
+    "generate": "gulp report",
+    "report": "npm-run-all --serial  \"generate -- {1} {2} {3} {4}\" --"
+  },
+  "devDependencies": {
+    "@types/cucumber": "~6.0.1",
+    "@types/gulp": "^4.0.7",
+    "@types/node": "~14.14.6",
+    "@types/yargs": "^15.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-sort-class-members": "^1.8.0",
+    "testcafe-reporter-html": "~1.4.6",
+    "ts-node": "~9.0.0",
+    "typescript": "~4.0.5"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "base64-img": "~1.0.4",
+    "cucumber": "~6.0.5",
+    "cucumber-tsflow": "^3.4.1",
+    "del-cli": "^3.0.1",
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.31",
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "npm-run-all": "^4.1.5",
+    "retry": "^0.12.0",
+    "testcafe": "~1.9.4",
+    "uuid": "^8.3.1",
+    "yargs": "^16.1.0"
+  }
+}

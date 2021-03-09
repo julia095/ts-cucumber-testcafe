@@ -1,0 +1,4 @@
+# don't ever lint node_modules
+node_modules
+src/support/performance_cheats/performance_hacks.js
+.eslintrc.js
