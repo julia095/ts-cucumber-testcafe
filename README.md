@@ -77,3 +77,6 @@ Reports are done via the Cucumber reporter. The results are placed in the /src/r
 ## Demo feature file
 
 For demo purposes I included test_elements.feature
+
+Big thanks to https://github.com/alexej-strelzow as this is a a fork his comprehensive project. 
+I adjusted and tweaked it a little bit to help me reach my automation goals:-)
